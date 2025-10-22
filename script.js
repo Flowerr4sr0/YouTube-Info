@@ -5,7 +5,7 @@ const subscriberCountElement = document.getElementById('subscriberCount');
 async function updateSubscriberCount() {
   const count = await getSubscriberCount(CHANNEL_ID, API_KEY);
   if (count !== null) {
-    subscriberCountElement.textContent = 'count' + 'Subscribers';
+    subscriberCountElement.textContent = 'count;' + 'Subscribers';
   } else {
     subscriberCountElement.textContent = 'Error displaying or fetching from YouTube Data API v4.1';
   }
