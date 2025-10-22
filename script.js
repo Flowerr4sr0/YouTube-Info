@@ -5,7 +5,7 @@ const subscriberCountElement = document.getElementById('subscriberCount');
 async function updateSubscriberCount() {
   const count = await getSubscriberCount(CHANNEL_ID, API_KEY);
   if (count !== null) {
-    subscriberCountElement.textContent = count;
+    subscriberCountElement.textContent = 'count' + 'Subscribera';
   } else {
     subscriberCountElement.textContent = 'Error';
   }
